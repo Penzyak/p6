@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<script type="text/javascript">
+function PageColor(){
+var a = document.getElementById('Pagecolor');
+a = a.value;
+var b = document.documentElement;
+b.style.backgroundColor = a;
+}
+function TextColor(){
+var a = document.getElementById('Textcolor');
+a = a.value;
+var b = document.documentElement;
+var b = document.getElementById('Changetext');
+b.style.color = a;
+}
+function Link(){
+var b = document.getElementById('Linkinput');
+b = b.value;
+document.getElementById('Link').href = b;
+}
+</script>
+<body>
+<p>Цвет фона страницы</p>
+<input type="text" id="Pagecolor">
+<input type="button" value="Ок" onclick="PageColor()">
+<p id="Changetext">Цвет этого текста</p>
+<input type="text" id="Textcolor">
+<input type="button" value="Ок" onclick="TextColor()">
+<br>
+<p>Изменение ссылки</p>
+<input type="text" id="Linkinput">
+<input type="button" value="Ок" onclick="Link()">
+<br>
+<br>
+<a style="margin-left: 25px; text-decoration: none;"id = "Link" href="https://www.taganay.org">Перейти по ссылке</a>
+</p>
+</body>
+</html>
